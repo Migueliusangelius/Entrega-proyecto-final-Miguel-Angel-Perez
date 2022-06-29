@@ -1,0 +1,105 @@
+//reset
+/*reset*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "utilities/mixin";
+@import "utilities/variables";
+@import "components/main";
+@import "components/main-html-secundarios";
+@import "components/mediaqueries";
+@import "components/contacto";
+
+
+//body
+/*body*/
+
+
+body
+    {background-image: url("../img/imgFondo.jpeg");
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        .mainP{
+            font-family: $fuentePrincipal;
+            font-size: 30px;
+            color: $colorPrincipal;
+            text-align: center;
+            
+            }   
+            .posicionRedes{
+                position: fixed;
+                bottom:0;
+                right: 0;
+                z-index: 1;
+            }
+            .linkRed2{
+                font-family: $fuentePrincipal;
+                color: $colorPrincipal;
+                text-decoration: none;
+            }
+
+         
+    }
+   
+
+
+
+
+//header
+/*header*/
+
+header{
+    background-image: $colorSecundario;
+    h1{
+        text-align: center;
+        font-family: $fuentePrincipal;
+        font-size: 40px;
+        color: $colorPrincipal;
+    
+    }
+
+    
+    nav ul{
+        @include flex (flex, none, space-evenly);
+        
+        li{
+        font-family: $fuentePrincipal;
+            font-size: 30px;
+            color: $colorPrincipal;
+        }
+        
+    
+    }
+    
+    
+}
+
+//footer
+/*footer*/
+
+.footerNosotros{
+    text-align: center;
+    p{
+        font-family: $fuentePrincipal;
+        color: $colorPrincipal;
+        font-size: 20px; 
+        margin: 10px;
+    }
+
+}
+
+
+
+ 
+
+
+
+
+

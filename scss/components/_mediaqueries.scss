@@ -1,0 +1,180 @@
+//mediaqueries 1200px
+
+/*media querie 1200px*/
+
+@media screen and (min-width:1080px) {
+    
+//header
+/*header*/
+
+
+
+    header{
+        background-image: linear-gradient(rgb(168, 190, 168),rgb(133, 165, 165));
+        h1{
+            text-align: center;
+            font-family: 'Macondo', cursive;
+            font-size: 50px;
+        
+        }
+    
+        nav ul{
+            @include flex (flex, none, space-evenly);
+            
+            li{
+                font-family: $fuentePrincipal;
+                font-size: 25px;
+                color: $colorPrincipal;
+            }
+            
+        
+        }
+        
+        
+        
+    }
+
+//main
+/*main*/
+
+
+
+
+    .mainNosotros{
+        p{
+            font-size: 40px;
+        }
+        margin: 0px;
+        display: grid;
+        grid-template-areas: "mainP mainP mainP mainP"
+                            "imgCent imgCent imgCent imgCent"
+                            "parrafo parrafo parrafo parrafo";
+                            column-gap:rem;
+                            
+                        
+                            }
+
+    
+    .imgCent{
+        grid-area: imgCent;
+        
+    }
+    
+    
+    
+    .mainP{
+        grid-area: mainP;
+        
+        
+        
+    }
+    
+    .imagen1{
+    
+    grid-area: imagen1;
+    
+    }
+    
+    .imagen2{
+    grid-area: imagen2;
+    
+    }
+    
+    .imagen3{
+    
+    grid-area: imagen3;
+    
+    }
+    
+    .imagen4{
+    grid-area: imagen4;
+    }
+    
+    .parrafo{
+        grid-area: parrafo;
+        
+        
+    }
+
+   
+/*body*/
+//body
+
+body
+    {background-image: url("../img/imgFondo.jpeg")
+        
+    }
+body{
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+}
+
+//footer
+/*footer*/
+
+.footerNosotros{
+    margin: 40px;
+    text-align: center;
+    p{
+        font-family: $fuentePrincipal;
+        color: $colorPrincipal;
+        font-size: 30px; 
+
+    }
+}
+
+
+    
+             
+    
+    
+    
+}
+
+/* html secundarios version 720*/
+
+
+@media screen and (min-width:720px)
+{
+
+    .mainFilo{
+        @include gridmq (grid, repeat(2,1fr), repeat(4, 1fr), center, center, 80px, 80px, 10%);
+        grid-template-areas: 
+                            "cardUno cardDos"
+                            "cardTres cardCuatro"
+                            "cardCinco cardSeis"
+                            "cardSiete cardOcho"
+                            "cardNueve";}
+
+
+
+                        }
+
+  /*html secundarios version 1080px*/
+
+
+
+
+@media screen and (min-width: 1080px)
+{
+
+
+
+    .mainFilo{
+        @include gridmq (grid, repeat(3,1fr), repeat(4,0.5fr), center, center, 10%, 80px, 80px,);
+             grid-template-areas: 
+                            "cardUno cardDos cardTres"
+                            "cardCuatro cardCinco cardSeis"
+                            "cardSiete cardOcho cardNueve"
+                             ;
+}
+
+
+
+}
+
+
+                      

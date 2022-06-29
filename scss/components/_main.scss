@@ -1,0 +1,71 @@
+//main
+/*main*/
+
+
+
+    
+    .mainNosotros{
+        display: grid;
+        grid-template-columns: repeat(1.5,0.5fr);
+        grid-template-rows: repeat(3,);
+        justify-content: center;
+        justify-items: center;
+        margin:auto;
+        grid-template-areas: "mainP"
+                            "imgCent"
+                            "parrafo";
+        
+        
+    
+                           
+    
+   
+    
+    .imgCent{
+        grid-area: imgCent;
+        
+    }
+    
+    
+    
+    .mainP{
+        grid-area: mainP;
+        
+        
+    }
+    
+    .imagen1{
+    
+    grid-area: imagen1;
+    
+    }
+    
+    .imagen2{
+    grid-area: imagen2;
+    
+    }
+    
+    .imagen3{
+    
+    grid-area: imagen3;
+    
+    }
+    
+    .imagen4{
+    grid-area: imagen4;
+    }
+    
+    .parrafo{
+        grid-area: parrafo;
+        
+        
+    }
+
+    p{
+        //@extend
+        @extend .mainP;
+    
+        }
+
+}
+    

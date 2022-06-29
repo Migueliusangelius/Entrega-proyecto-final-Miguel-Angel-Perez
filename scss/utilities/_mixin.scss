@@ -1,0 +1,22 @@
+@mixin flex ($flex, $style, $content) {
+    display: $flex;
+    list-style: $style;
+    justify-content: $content;
+
+}
+@mixin grid ($grid, $content, $aliCont,) {
+    display: $grid;
+    justify-content: $content;
+    align-content: $aliCont;
+}
+
+@mixin gridmq ($grid, $grtemco, $grtemro, $jucon, $alcont, $grcolga, $grroga, $padding,) {
+    display: $grid;
+    grid-template-columns: $grtemco;
+    grid-template-rows: $grtemro;
+    justify-content: $jucon;
+    align-content: $alcont;
+    grid-column-gap: $grcolga;
+    grid-row-gap: $grroga;
+    padding: $padding;
+}

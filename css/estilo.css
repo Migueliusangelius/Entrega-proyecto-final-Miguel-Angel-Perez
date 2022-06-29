@@ -1,0 +1,204 @@
+/*reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*main*/
+.mainNosotros {
+  display: grid;
+  grid-template-columns: repeat(1.5, 0.5fr);
+  grid-template-rows: repeat(3);
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  grid-template-areas: "mainP" "imgCent" "parrafo"; }
+  .mainNosotros .imgCent {
+    grid-area: imgCent; }
+  .mainNosotros .mainP, .mainNosotros p, .mainNosotros .article, .mainNosotros .positionForm p, .positionForm .mainNosotros p {
+    grid-area: mainP; }
+  .mainNosotros .imagen1 {
+    grid-area: imagen1; }
+  .mainNosotros .imagen2 {
+    grid-area: imagen2; }
+  .mainNosotros .imagen3 {
+    grid-area: imagen3; }
+  .mainNosotros .imagen4 {
+    grid-area: imagen4; }
+  .mainNosotros .parrafo {
+    grid-area: parrafo; }
+
+/*html secundarios*/
+.article {
+  justify-content: center;
+  padding: 10px; }
+
+.mainFilo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "cardUno" "cardDos" "cardTres" "cardCuatro" "cardCinco" "cardSeis" "cardOcho" "cardNueve"; }
+
+.cardUno {
+  display: cardUno; }
+
+.cardDos {
+  display: cardDos; }
+
+.cardTres {
+  display: cardTres; }
+
+.cardCuatro {
+  display: cardCuatro; }
+
+.CardCinco {
+  display: cardCinco; }
+
+.cardSeis {
+  display: cardSeis; }
+
+.cardSiete {
+  display: cardSiete; }
+
+.cardOcho {
+  display: cardOcho; }
+
+.cardNueve {
+  display: cardNueve; }
+
+/*media querie 1200px*/
+@media screen and (min-width: 1080px) {
+  /*header*/
+  header {
+    background-image: linear-gradient(#a8bea8, #85a5a5); }
+    header h1 {
+      text-align: center;
+      font-family: 'Macondo', cursive;
+      font-size: 50px; }
+    header nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-evenly; }
+      header nav ul li {
+        font-family: "Macondo", cursive;
+        font-size: 25px;
+        color: #361b6b; }
+  /*main*/
+  .mainNosotros {
+    margin: 0px;
+    display: grid;
+    grid-template-areas: "mainP mainP mainP mainP" "imgCent imgCent imgCent imgCent" "parrafo parrafo parrafo parrafo";
+    column-gap: rem; }
+    .mainNosotros p {
+      font-size: 40px; }
+  .imgCent {
+    grid-area: imgCent; }
+  .mainP, .mainNosotros p, .article, .positionForm p {
+    grid-area: mainP; }
+  .imagen1 {
+    grid-area: imagen1; }
+  .imagen2 {
+    grid-area: imagen2; }
+  .imagen3 {
+    grid-area: imagen3; }
+  .imagen4 {
+    grid-area: imagen4; }
+  .parrafo {
+    grid-area: parrafo; }
+  /*body*/
+  body {
+    background-image: url("../img/imgFondo.jpeg"); }
+  body {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    width: 50%;
+    height: 50%; }
+  /*footer*/
+  .footerNosotros {
+    margin: 40px;
+    text-align: center; }
+    .footerNosotros p {
+      font-family: "Macondo", cursive;
+      color: #361b6b;
+      font-size: 30px; } }
+
+/* html secundarios version 720*/
+@media screen and (min-width: 720px) {
+  .mainFilo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+    padding: 10%;
+    grid-template-areas: "cardUno cardDos" "cardTres cardCuatro" "cardCinco cardSeis" "cardSiete cardOcho" "cardNueve"; } }
+
+/*html secundarios version 1080px*/
+@media screen and (min-width: 1080px) {
+  .mainFilo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 10%;
+    grid-row-gap: 80px;
+    padding: 80px;
+    grid-template-areas: "cardUno cardDos cardTres" "cardCuatro cardCinco cardSeis" "cardSiete cardOcho cardNueve"; } }
+
+/*html contacto*/
+.positionForm {
+  text-align: center;
+  margin: 100px; }
+
+/*body*/
+body {
+  background-image: url("../img/imgFondo.jpeg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+  body .mainP, body .mainNosotros p, .mainNosotros body p, body .article, body .positionForm p, .positionForm body p {
+    font-family: "Macondo", cursive;
+    font-size: 30px;
+    color: #361b6b;
+    text-align: center; }
+  body .posicionRedes {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1; }
+  body .linkRed2 {
+    font-family: "Macondo", cursive;
+    color: #361b6b;
+    text-decoration: none; }
+
+/*header*/
+header {
+  background-image: linear-gradient(#a8bea8, #85a5a5); }
+  header h1 {
+    text-align: center;
+    font-family: "Macondo", cursive;
+    font-size: 40px;
+    color: #361b6b; }
+  header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly; }
+    header nav ul li {
+      font-family: "Macondo", cursive;
+      font-size: 30px;
+      color: #361b6b; }
+
+/*footer*/
+.footerNosotros {
+  text-align: center; }
+  .footerNosotros p {
+    font-family: "Macondo", cursive;
+    color: #361b6b;
+    font-size: 20px;
+    margin: 10px; }

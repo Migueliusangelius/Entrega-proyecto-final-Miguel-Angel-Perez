@@ -1,0 +1,13 @@
+//contacto
+/*html contacto*/
+
+.positionForm{
+    
+    text-align: center;
+    margin: 100px;
+    //@extend
+    p{
+    @extend .mainP
+}
+       
+    }

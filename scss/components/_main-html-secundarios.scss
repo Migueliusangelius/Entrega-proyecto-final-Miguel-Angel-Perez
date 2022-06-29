@@ -1,0 +1,58 @@
+//html secundarios
+/*html secundarios*/
+.article{
+    //@extend
+    @extend .mainP;
+    justify-content: center;
+    padding: 10px;
+    }
+
+.mainFilo{
+    
+     @include grid (grid, center, center);   
+    
+     grid-template-areas: 
+                        
+                        "cardUno"
+                        "cardDos"
+                        "cardTres"
+                        "cardCuatro"
+                        "cardCinco"
+                        "cardSeis"
+                        "cardOcho"
+                        "cardNueve"
+                         ;
+
+
+
+    
+}
+
+.cardUno{
+    display: cardUno;
+   
+}
+.cardDos{
+    display: cardDos;
+}
+.cardTres{
+    display: cardTres;
+}
+.cardCuatro{
+    display: cardCuatro;
+}
+.CardCinco{
+    display: cardCinco;
+}
+.cardSeis{
+    display: cardSeis;
+}
+.cardSiete{
+    display: cardSiete;
+}
+.cardOcho{
+    display: cardOcho;
+}
+.cardNueve{
+    display: cardNueve;
+}
